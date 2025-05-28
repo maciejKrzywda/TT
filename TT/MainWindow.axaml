@@ -1,0 +1,74 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MaxHeight="1000"
+        MaxWidth="800"
+        MinHeight="1000"
+        MinWidth="800"
+        Background="Black"
+        x:Class="TT.MainWindow"
+        Title="TT">
+<StackPanel Width="800" 
+                    Height="400" 
+                    HorizontalAlignment="Center"
+                    >
+        
+        <TextBlock 
+                        Text="Travel Planer"
+                        TextAlignment="Center"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        />
+                
+                <StackPanel
+                            Width="300"
+                            Margin="10">
+                        
+                        <TextBlock Text="Wpisz imię i nazwisko"
+                                   TextAlignment="Center"
+                                   FontSize="15"
+                                   FontWeight="Medium"/>
+                        
+                <TextBox
+                        x:Name="TextBox_Name"
+                        Width="100"
+                         Padding="10,5" 
+                         Margin="5"
+                         Text="John"/>
+                        
+                <TextBlock
+                           Text="Wybierz Kraj"
+                           TextAlignment="Center"
+                           Padding="5"
+                           FontSize="15"
+                           FontWeight="Medium"/>
+                
+                <ComboBox x:Name="ComboBox_Category"
+                          SelectedIndex="0" 
+                          HorizontalAlignment="Center"
+                          Margin="5">
+                        <ComboBoxItem Content="--Wybierz--" />
+                        <ComboBoxItem Content="Włochy"/>
+                        <ComboBoxItem Content="Japonia"/>
+                        <ComboBoxItem Content="Norwegia"/>
+                        <ComboBoxItem Content="USA"/>
+                        <ComboBoxItem Content="Francja"/>
+                </ComboBox>
+                        
+                        <CheckBox Content="Muzea"/>
+                        <CheckBox Content="Parki Narodowe"/>
+                        <CheckBox Content="Zabytki"/>
+                        <CheckBox Content="Restauracje"/>
+                        <CheckBox Content="Galerie sztuki"/>
+                        <CheckBox Content="Festiwale i knocerty"/>
+                        
+                        <RadioButton GroupName="transport" Content="Samolot"/>
+                        <RadioButton GroupName="transport" Content="autokar"/>
+                        <RadioButton GroupName="transport" Content="pociąg"/>
+                        <RadioButton GroupName="transport" Content="statek"/>
+                        
+                </StackPanel>
+        </StackPanel>
+</Window>
